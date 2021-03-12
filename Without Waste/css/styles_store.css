@@ -7,7 +7,7 @@ body{
     
 }
 /*  Navbar Custom Settings  */
-header{
+.store-title{
     background-color: rgb(61, 61, 61);
     padding-top: 70px;
     margin: 0;
@@ -19,6 +19,11 @@ header{
     align-items: center;
     margin: 0 auto;
 }
+
+.Header-hr{
+  border-top: 1px solid rgb(53, 53, 53);
+}
+
 ul{
     margin: 0;
     padding: 0;
