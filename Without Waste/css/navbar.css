@@ -1,0 +1,276 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: lightcyan;
+    color:white;
+    font-family: "montserrat", Helvetica Neue, Helvetica, Arial;
+    line-height: 1.6;
+    height: 100vh;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.home{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+
+}
+
+.home nav{
+    position: fixed;
+    top: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index: 2;
+}
+.home .mainUl{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    margin-top: 0;        
+    width: 100%;
+    padding: 0;
+    transition: 0.3s;
+} 
+
+.home nav li{
+    display: inline-block;
+    margin: 0 1rem;    
+    transition: transform .2s;   
+       
+}
+.home nav a{
+    color: rgba(255, 255, 255, 0.767);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 19px;
+    padding: 0px;
+    margin: 0px;   
+    margin-top: 20px;   
+    transition: .5s;
+    display: block;
+    font-stretch: expanded;
+    font-weight: normal;
+}
+
+.home nav .logo a{
+    background-image: url("../images/logo-icon.png");
+    background-repeat: no-repeat;
+    background-size: 150px;
+    display:inline-block;
+    height: 80px;
+    position: relative;
+    text-indent: -999999px;
+    width: 200px;
+    top: -35px;   
+    right: -20px;     
+    
+}
+
+/*Dropdown Menu */
+.reciklirane_dropdown{
+    float:left;
+    overflow: hidden;
+}
+
+.reciklirane_dropdown .dropbtn{
+    font-size: 19px;
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.767);
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.content_dropdown{
+    display: none;
+    position: absolute;
+    background-color: rgb(17, 190, 46);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.content_dropdown a{
+    font-size: 15px;    
+    float: none;
+    color: rgba(255, 255, 255, 0.767); 
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+}
+.content_dropdown a:hover{
+    background-color: rgb(49, 49, 49);
+}
+.reciklirane_dropdown:hover .content_dropdown{
+    display: block;
+}
+
+/*active */
+.active{
+    background-color: black;
+}
+
+.active_nav{
+    content: "";
+    opacity: 80%;
+    width: 200px;
+    height: 3px;
+    top: -7px;
+    border-radius: 8px;
+}
+/* Icons Navbar settings */
+
+.iconsNav img{
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px; 
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.iconsNav li:nth-child(1) img:hover {
+    background-color: #cd201f;
+}
+.iconsNav li:nth-child(2) img:hover {
+    background-color: #4267B2;
+}
+.iconsNav li:nth-child(3) img:hover {
+    background-color: #fdf497;
+}
+.YTiconNav{
+    top: -7px;
+    right: 105px;
+    width: 42px;
+    height: 10%;
+    position: fixed;
+
+}
+.INiconNav{
+    content: "";
+    top: -7px;    
+    right: 55px;
+    width: 42px;
+    height: 10%;
+    position: fixed;
+    
+ 
+}
+.FCiconNav{
+    top: -7px;
+    right: 5px;
+    width: 42px;
+    height: 10%;
+    position: fixed;
+    
+}
+/*Navbar Animations */
+/* trying something new*/
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .35s;
+}
+nav li:hover{
+    transform: scale(1.15);     
+
+}
+   
+nav ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+nav.navbar ul li a{
+  position: relative;
+}
+nav.navbar ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0px;
+    margin: auto;
+    opacity: 1;
+    width: 0%;
+    content: '';
+    overflow: hidden;
+    color: transparent;
+    background: radial-gradient( rgb(17, 190, 46), rgba(255,0,0,0));
+    height: 3px;
+    text-align: left;
+  }
+  nav.navbar ul li a:before{
+    left: 0px;
+    top: 0px;
+  }
+  nav.navbar a:after
+  {
+      right: 0px;
+      bottom: 0px;
+  }  
+  nav.navbar ul li a:hover:after {
+    width: 100%;
+    opacity: 100;  
+}
+
+    /*After Scrolling */
+.background{
+    width: 100%;
+    background-color: rgb(15,15,15);
+    -webkit-box-shadow: 2px 2px 2px rgba(10, 10, 10, 0.959);      
+    -moz-box-shadow: 2px 2px 2px rgba(10, 10, 10, 0.959);  
+    box-shadow: 2px 2px 2px rgba(10, 10, 10, 0.959);        
+    transition: background-color 300ms linear, box-shadow 300ms ease;
+    -moz-transition: background-color 300ms linear, box-shadow 300ms ease;
+    -ms-transition: background-color 300ms linear, box-shadow 300ms ease;
+    -o-transition: background-color 300ms linear, box-shadow 300ms ease;
+}
+
+.backgroundicons img{
+    background-color: white;
+    transition: background-color 200ms linear;    
+    -moz-transition: background-color 200ms linear;    
+    -ms-transition: background-color 200ms linear;    
+    -o-transition: background-color 200ms linear;        
+}
+
+/* Footer */
+footer {
+    background:rgb(15,15,15);
+    width: 100%;
+    height: 300px;
+}
+.Ftitle{
+    font-size: 25px;
+    position: relative;
+}
+.FBorderhr{
+    border: 4px solid rgb(31, 31, 31) ;
+    -webkit-box-shadow: 0px -1px 6px 0px rgba(12, 12, 12, 0.81);
+    -moz-box-shadow:    0px -1px 6px 0px rgba(12, 12, 12, 0.81);
+    box-shadow:         0px -1px 6px 0px rgba(12, 12, 12, 0.81);
+}
+.Fvertical{
+    border-left: 1px solid white;
+    height: 180px;
+    width: 0;
+    position: relative;
+    left: 250px;
+
+}
+

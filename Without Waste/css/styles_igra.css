@@ -1,0 +1,12 @@
+body{
+    background: rgb(3, 104, 117);
+    color:white;
+    font-family: "montserrat", Helvetica Neue, Helvetica, Arial;
+    margin: 0;
+    padding: 0;
+}
+/*  Navbar Custom Settings  */
+header{
+    background-image: url("/images/blue.jpg");
+
+}
