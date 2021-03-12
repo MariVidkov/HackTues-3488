@@ -312,3 +312,26 @@ footer {
     font-size: 19px;
     font-weight: normal;
 }
+.FIcons li{
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 1rem;    
+    transition: transform .2s;   
+}
+
+.FIcons img{
+    border: 2px solid rgb(65, 65, 65);
+    background-color: white;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px; 
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.FIcons li:nth-child(1) img:hover {
+    background-color: #fdf497;
+}
+.FIcons li:nth-child(2) img:hover {
+    background-color: #cd201f;
+}
