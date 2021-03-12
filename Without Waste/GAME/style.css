@@ -11,51 +11,20 @@ body {
     width: 90%;
     margin-left: 5%;
     position: relative;
-    border: 1px solid #ff0000;
+    border: 1px solid #00ff8a;
     overflow: hidden;
-    background-color: #31b6ce;
+    background-color: #f6eb6d;
 }
 
 #score_help {
     text-align: center;
     font-size: 25px;
-    background-color: #eaeaea;
+    background-color: #93e833;
 }
 
-#branch {
+.rubish {
     position: absolute;
-    height: 2%;
-    width: 100%;
-    background-color: #7b2e00;
-    top: 23%;
-}
-
-.hen {
-    position: absolute;
-    height: 15%;
-    width: 8%;
-    top: 10%;
-    background: url('hen-right.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 100;
-}
-
-#hen1{
-    left: 20%;
-}
-
-#hen2{
-    left: 40%
-}
-
-#hen3{
-    left:60%
-}
-
-.egg{
-    position: absolute;
-    top: 18%;
+    top: 1%;
     height: 5%;
     width: 2%;
     background-color: #fff;
@@ -63,17 +32,18 @@ body {
     z-index: 99;
 }
 
-#egg1{
-    left: calc(20% + 8%/2 - 2%/2);
+#rubish1{
+    left: calc(60% + 8%/2 - 2%/2);
 }
 
-#egg2 {
+#rubish2 {
     left: calc(40% + 8%/2 - 2%/2);
 }
 
-#egg3 {
-    left: calc(60% + 8%/2 - 2%/2);
+#rubish3 {
+    left: calc(80% + 8%/2 - 2%/2);
 }
+
 
 .bullseye{
     display: none;
@@ -101,19 +71,19 @@ body {
 
 #floor{
     position: absolute;
-    height: 7%;
+    height: 10%;
     width: 100%;
-    background-color: #292929;
+    background-color: #045c06;
     bottom: 0;
     z-index: 10;
 }
 
 #basket{
-    height: 100px;
-    width: 85px;
+    height: 200px;
+    width: 115px;
     position: absolute;
     bottom: 5px;
-    background: url('basket.jpg');
+    background: url('glassB.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;

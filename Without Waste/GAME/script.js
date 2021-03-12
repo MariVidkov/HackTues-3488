@@ -2,25 +2,25 @@
 
     the_game = function () {
 
-        if (check_egg_hits_floor(egg1) || check_egg_hits_basket(egg1)) {
-            set_egg_to_initial_position(egg1);
+        if (check_rubish_hits_floor(rubish1) || check_rubish_hits_basket(rubish1)) {
+            set_rubish_to_initial_position(rubish1);
         }
         else {
-            egg_down(egg1);
+            rubish_down(rubish1);
         }
 
-        if (check_egg_hits_floor(egg2) || check_egg_hits_basket(egg2)) {
-            set_egg_to_initial_position(egg2);
+        if (check_rubish_hits_floor(rubish2) || check_rubish_hits_basket(rubish2)) {
+            set_rubish_to_initial_position(rubish2);
         }
         else {
-            egg_down(egg2);
+            rubish_down(rubish2);
         }
 
-        if (check_egg_hits_floor(egg3) || check_egg_hits_basket(egg3)) {
-            set_egg_to_initial_position(egg3);
+        if (check_rubish_hits_floor(rubish3) || check_rubish_hits_basket(rubish3)) {
+            set_rubish_to_initial_position(rubish3);
         }
         else {
-            egg_down(egg3);
+            rubish_down(rubish3);
         }
 
         if (life > 0) {
