@@ -74,7 +74,7 @@ html{
     position: relative;
     text-indent: -999999px;
     width: 200px;
-    top: -20px;   
+    top: -10px;   
     right: 0px;     
     
 }
@@ -265,36 +265,6 @@ footer {
     -moz-box-shadow:    0px -1px 6px 0px rgba(12, 12, 12, 0.81);
     box-shadow:         0px -1px 6px 0px rgba(12, 12, 12, 0.81);
 }
-.MainNameIndex {
-    font-size: 25px;
-    color: rgb(223, 223, 223);
-    position: centered;
-   
-     
-}
-.FDescription{
-    font-size: 19px;
-    color: rgb(223, 223, 223);
-    height: 300px;
-    width: 300px;
-    text-align: left;
-  
-}
-.FContacts{
-    font-size: 20px;
-    color: rgb(223, 223, 223);
-    height: 20px;
-
-  
-}
-.Flogo{
-    width: 300px;
-    height: 150px;
-}
-.FName{ 
-    font-size: 20px;
-    position: centered;
-}
 
 .FSection{
     width: 33%;
@@ -303,5 +273,42 @@ footer {
     align-items: center;
     float: left;
     text-align: center;
+    height: 380px;
     
+}
+.Ftitle {
+    font-size: 25px;
+    color: rgb(223, 223, 223);
+   
+     
+}
+.FDescription{
+    font-size: 17px;
+    color: rgb(223, 223, 223);
+    height: 300px;
+    width: 300px;
+    text-align: left;
+    margin: auto;
+    margin-top: 20px;
+    font-weight: normal;
+}
+.FContacts{
+    font-size: 20px;
+    color: rgb(223, 223, 223);
+    height: 20px;
+    font-weight: normal;
+    margin-top: 40px;
+  
+}
+.Flogo{
+    width: 300px;   
+    height: 150px;
+}
+.FName{ 
+    font-size: 20px;
+}
+.Fgmail{
+    color: rgb(102, 102, 102);
+    font-size: 19px;
+    font-weight: normal;
 }
