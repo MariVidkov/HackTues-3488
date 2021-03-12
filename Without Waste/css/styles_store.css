@@ -1,5 +1,5 @@
 body{
-    background: rgb(4, 84, 116);
+  background-image: url("../images/store/fon za store/13.jpg");
     color:white;
     font-family: "montserrat", Helvetica Neue, Helvetica, Arial;
     margin: 0px;
@@ -9,9 +9,15 @@ body{
 /*  Navbar Custom Settings  */
 header{
     background-color: rgb(61, 61, 61);
-    padding-top: 50px;
+    padding-top: 70px;
     margin: 0;
     font-size: 40px;
+    font-weight:bold;
+    font-stretch: expanded;
+    text-transform: uppercase;    
+    width: 1200px;
+    align-items: center;
+    margin: 0 auto;
 }
 ul{
     margin: 0;
