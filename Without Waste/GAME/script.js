@@ -20,7 +20,7 @@
             set_egg_to_initial_position(egg3);
         }
         else {
-            egg_down(egg1);
+            egg_down(egg3);
         }
 
         if (life > 0) {
@@ -29,8 +29,7 @@
         else {
             stop_the_game();
         }
-        anim_id = requestAnimationFrame(the_game);
-    }
+    };
 
     anim_id = requestAnimationFrame(the_game);
 

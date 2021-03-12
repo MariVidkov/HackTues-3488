@@ -27,7 +27,7 @@ function show_bulls_eye(egg) {
 }
 
 function hide_bulls_eye(bullseye_num) {
-    seTimeout(function () {
+    setTimeout(function () {
         $('#bullseye' + bullseye_num).hide();
     }, 800);
 }
@@ -44,8 +44,8 @@ function check_egg_hits_basket(egg) {
             update_score();
             return true;
         }
-        return false;
     }
+    return false;
 }
 
 function update_score() {
@@ -62,4 +62,6 @@ function stop_the_game() {
     restart.slideDown();
 }
 
-restart
+restart.click(function () {
+    location.reload();
+});

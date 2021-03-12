@@ -1,7 +1,7 @@
 var basket = $('#basket'),
     container = $('#container'),
     hen = $('.hen'),
-    eggs = $('.eggs'),
+    eggs = $('.egg'),
     egg1 = $('#egg1'),
     egg2 = $('#egg2'),
     egg3 = $('#egg3'),
@@ -23,7 +23,7 @@ var basket = $('#basket'),
     the_game = 0,
     anim_id = 0,
     egg_current_position = 0,
-    egg_topp = 0,
+    egg_top = 0,
     basket_top = container_height - basket_height,
     bullseye_num = 0;
 life_span.text(life);
