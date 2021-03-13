@@ -38,7 +38,7 @@ html{
     list-style: none;
     display: flex;
     justify-content: center;
-    height: 70px;
+    height: 80px;
     margin-top: 0;        
     width: 100%;
     padding: 0;
@@ -48,21 +48,21 @@ html{
 .home nav li{
     display: inline-block;
     margin: 0 1rem;    
-    transition: transform .2s;   
-       
+    transition: transform .2s;     
 }
 .home nav a{
     color: rgba(255, 255, 255, 0.767);
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 19px;
-    padding: 0px;
-    margin: 0px;   
+    font-size: px;
+    padding: 10px;
+    margin: 10px; 
     margin-top: 20px;   
     transition: .5s;
     display: block;
     font-stretch: expanded;
-    font-weight: normal;
+    font-weight: normal; 
+
 }
 
 .home nav .logo a{
@@ -70,7 +70,7 @@ html{
     background-repeat: no-repeat;
     background-size: 190px;
     display:inline-block;
-    height: 80px;
+    height: 60px;
     position: relative;
     text-indent: -999999px;
     width: 200px;
@@ -83,6 +83,7 @@ html{
 .dropdown{
     float:left;
     overflow: hidden;
+    margin: 10px;
 }
 
 .dropdown .dropbtn{

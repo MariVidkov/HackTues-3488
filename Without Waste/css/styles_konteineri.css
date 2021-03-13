@@ -7,8 +7,9 @@ body{
 }
 /*  Navbar Custom Settings  */
 .home {
-  background-image: linear-gradient(to left bottom, #00ff64, #00faa4, #00f2d3, #00e6ef, #00d8f7,
-   #00c6f5, #00b3f0, #009fe7, #0082d9, #0065c8, #0046b3, #0b2499);
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9,
+  #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8,
+   #52cffe, #41dfff, #46eefa, #5ffbf1);
   height: 110vh;
 }
   /*  Navbar Custom Settings  */

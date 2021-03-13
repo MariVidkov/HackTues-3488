@@ -1,22 +1,60 @@
-async function initMap() {
-    const uluru = { lat: 42.64851988827961, lng: 23.40105191567047 };
 
+  function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 12,
-      center: uluru,
+      zoom: 10.5,
+      center: {lat: 42.64851988827961, lng: 23.40105191567047 },
+    });
+    const labels = "";
+   
+    const markers = locations.map((location, i) => {
+      return new google.maps.Marker({
+        position: location,
+        label: labels[i % labels.length],
+      });
     });
 
-    const containers2 = await fetch_containers2()
-
-    for (let i = 0; i < containers2.length; i++) {
-      let position =  { lat: containers2[i][0], lng: containers2[i][1] };
-      new google.maps.Marker({
-      position,
-      map,
-    });   
-    }
+    new MarkerClusterer(map, markers, {
+      imagePath:
+        "https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m",
+    });
   }
-   async function fetch_containers2() {
-    const response = await fetch('/js/containers2.json')
-    return response.json()
-  }
+  const locations = [    
+    {lat: 42.72729253760643, lng: 23.301109425023103},
+    {lat: 42.731980224921585,lng: 23.30643516963818},
+    {lat: 42.739539076765276,lng: 23.304593427310618},
+    {lat: 42.742894934488604,lng: 23.279538454293583},
+    {lat: 42.71883358961671,lng: 23.25670661838576},
+    {lat: 42.71363292178853,lng: 23.24590749662054},
+    {lat: 42.686447647641195,lng: 23.24670741381799},
+    {lat: 42.67157616595607, lng:23.25908719849767},
+    {lat: 42.660966784274905, lng:23.242806742653546},
+    {lat: 42.6465800347808, lng:23.267095713817},
+    {lat: 42.65928120772421,lng: 23.27279259507032},
+    {lat: 42.66581998569414, lng:23.28478889661933},
+    {lat: 42.67539646840276, lng:23.293879998472903},
+    {lat: 42.666704758280886, lng:23.30026898127448},
+    {lat: 42.66986337420051,lng: 23.30429731381759},
+    {lat: 42.67533336515731,lng: 23.293890727309094},
+    {lat: 42.67999665239431,lng: 23.296620971490164},
+    {lat: 42.640611602688544, lng:23.37945356963581},
+    {lat: 42.64215754534218,lng: 23.369705269635972},
+    {lat: 42.64851988827961,lng: 23.40105191567047},
+    {lat: 42.66239177660085,lng: 23.39752718312779},
+    {lat: 42.66029374525521,lng: 23.372477100325938},
+    {lat: 42.66229341859616,lng: 23.363430483127928},
+    {lat: 42.66039107548846,lng: 23.34773188498109},
+    {lat: 42.66072112358422,lng: 23.317770296619216},
+    {lat: 42.67540577361999,lng: 23.357640596619532},
+    {lat: 42.684758212745265,lng: 23.363951050585424},
+    {lat: 42.674077812231744,lng:23.333678113817676},
+    {lat: 42.682691727873596,lng: 23.325896754292266},
+    {lat: 42.68928017762415,lng: 23.332447340800815},
+    {lat: 42.696350339985095,lng: 23.342302996620056},
+    {lat: 42.69791712964118,lng: 23.331053683128637},
+    {lat: 42.69572146602662,lng: 23.322164152439033},
+    {lat: 42.69640695456301, lng:23.30733629847343},
+    {lat: 42.696937130885765,lng: 23.301704154292562},
+    {lat: 42.70367766558613,lng: 23.309366557999496},
+    {lat: 42.70428169554509, lng: 23.32541159847361},
+    {lat: 42.71204947820978,lng: 23.314384969637672},    
+  ];
