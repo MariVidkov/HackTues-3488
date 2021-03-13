@@ -26,4 +26,5 @@ var basket = $('#basket'),
     rubish_top = 0,
     basket_top = container_height - basket_height,
     drop_num = 0;
+current_material = "";
 life_span.text(life);

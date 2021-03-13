@@ -31,6 +31,6 @@
         }
     };
 
-    anim_id = requestAnimationFrame(the_game);
+
 
 });

@@ -1,5 +1,5 @@
 ﻿$(document).on('mousemove', function (e) {
-    basket.css('left', e.pageX);
+    basket.css('left', e.pageX - 150);
 });
 
 function rubish_down(rubish) {
@@ -22,7 +22,7 @@ function set_rubish_to_initial_position(rubish) {
 
 function show_drop(rubish) {
     drop_num = rubish.attr('data-drop');
-    $('#drop' + drop_num).show();
+    $('#drop' + drop_num).css('background', 'url("broken_' + current_material + '.png")').show();
     hide_drop(drop_num);
 }
 
@@ -82,6 +82,7 @@ function change_scene(hide, show) {
 }
 
 function choice(material) {
+    current_material = material;
     var x = document.getElementById("basket");
     if (material === "glass") {
         x.style.background = "url('glassB.png')";
@@ -94,21 +95,37 @@ function choice(material) {
     }
     if (material === "paper") {
         x.style.background = "url('paperB.png')";
-    } 
+    }
 }
 
 function trash(material) {
-    var x = document.getElementByClass("rubish");
-    if (material === "glass") {
-        x.style.background = "url('glass_trash.png')";
-    }
-    if (material === "plastic") {
-        x.style.background = "url('plastic_trash.png')";
-    }
-    if (material === "metal") {
-        x.style.background = "url('metal_trash.png')";
-    }
-    if (material === "paper") {
-        x.style.background = "url('paper_trash.png')";
+    var elements = document.getElementsByClassName("rubish");
+
+    for (let x of elements) {
+        if (material === "glass") {
+            x.style.background = "url('glass_trash.png')";
+        }
+        if (material === "plastic") {
+            x.style.background = "url('plastic_trash.png')";
+        }
+        if (material === "metal") {
+            x.style.background = "url('metal_trash.png')";
+        }
+        if (material === "paper") {
+            x.style.background = "url('paper_trash.png')";
+        }
     }
 };
+
+function chooseAndStartGame(mat) {
+    change_scene('container', 'choice');
+    choice(mat);
+    trash(mat);
+    anim_id = requestAnimationFrame(the_game);
+}
+
+$(function () {
+    setTimeout(() => {
+        $("#container").hide();
+    }, 1);
+});

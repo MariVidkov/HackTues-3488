@@ -23,21 +23,26 @@ body {
 }
 
 .rubish {
-    /*position: absolute;
-    top: 1%;
-    height: 5%;
-    width: 2%;
-    background-color: #77cfb9;
+    position: absolute;
+    width: 43px;
+    height: 70px;
+    text-align: center;
+    /*;
+	top: 1%;
     border-radius: 50%;
-    z-index: 99;*/
-
+	*/
+    background-color: #77cfb9;
+    z-index: 99;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*
     height: 10%;
     width: 5%;
     position: absolute;
-    background-size: cover;
+    
     background-repeat: no-repeat;
-    text-align: center;
-    z-index: 99;
+    
+    z-index: 99;*/
 }
 
 #rubish1 {
@@ -128,7 +133,7 @@ body {
     cursor: pointer;
 }
 
-.button{
+.button {
     position: relative;
     left: 40%;
 }

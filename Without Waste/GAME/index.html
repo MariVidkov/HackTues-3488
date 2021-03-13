@@ -1,5 +1,4 @@
-﻿﻿
-<html>
+﻿﻿<html>
 
 <head>
     <title>Game</title>
@@ -8,11 +7,11 @@
 
 <body>
     <div id="choice">
-        <button class="button" onclick="/*change_scene('container', 'choice'),*/ choice('glass'), trash('glass')"><image src="glassB.png"></image></button>
-        <button class="button" onclick="change_scene('container', 'choice'),choice('plastic'), trash('plastic')"><image src="plasticB.png"></image></button>
+        <button class="button" onclick="chooseAndStartGame('glass')"><image src="glassB.png"></image></button>
+        <button class="button" onclick="chooseAndStartGame('plastic')"><image src="plasticB.png"></image></button>
         <br>
-        <button class="button" onclick="change_scene('container', 'choice'),choice('metal'), trash('metal')"><image src="metalB.png"></image></button>
-        <button class="button" onclick="change_scene('container', 'choice'),choice('paper'), trash('paper')"><image src="paperB.png"></image></button>
+        <button class="button" onclick="chooseAndStartGame('metal')"><image src="metalB.png"></image></button>
+        <button class="button" onclick="chooseAndStartGame('paper')"><image src="paperB.png"></image></button>
     </div>
 
     <div id="container"  <!--style ="display:none"-->>
