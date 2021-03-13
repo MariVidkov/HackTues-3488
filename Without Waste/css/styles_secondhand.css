@@ -1,42 +1,47 @@
 body{
-    background-color: #010a14;
+      
       color:white;
       font-family: "montserrat", Helvetica Neue, Helvetica, Arial;
       margin: 0px;
       padding: 0;
   }
   /*  Navbar Custom Settings  */
-  header{
-        background-color: #041a33;
-          padding-top: 100px;
-          border-bottom: 4px solid rgb(113,191,68);
-          width: 1800px;
-          border-radius: 20px;
-          margin: 0;
-          font-size: 35px;
-          font-weight:bold;
-          font-stretch: expanded;
-          text-transform: uppercase;    
-          max-width: 2000px;
-          align-items: center;
-          margin: 0 auto;
+  .home {
+    background-image: linear-gradient(to left bottom, #00ff64, #00faa4, #00f2d3, #00e6ef, #00d8f7,
+     #00c6f5, #00b3f0, #009fe7, #0082d9, #0065c8, #0046b3, #0b2499);
+    height: 110vh;
   }
-  ul{
+
+  header{
+    background-color: #041a33;
+      padding-top: 100px;
+      border-bottom: 4px solid rgb(113,191,68);
+      width: 1600px;
+      border-radius: 20px;
       margin: 0;
-  }   
-  #map{
-      height: 90vh;
-      width: 100%;
-    }    
-  
-  .section-map{
-          max-width: 1900px;
-          width: 1500px;
-          margin: auto;
-          background: rgb(17, 17, 17);
-          overflow: auto;
-          border-right: 4px solid rgb(113,191,68);
-          border-left: 4px solid rgb(113,191,68);
-    }
+      font-size: 35px;
+      font-weight:bold;
+      font-stretch: expanded;
+      text-transform: uppercase;    
+      max-width: 2000px;
+      align-items: center;
+      margin: 0 auto;
+}
+ul{
+  margin: 0;
+}   
+#map{
+  height: 90vh;
+  width: 100%;
+}    
+
+.section-map{
+      max-width: 1900px;
+      width: 1350px;
+      margin: auto;
+      background: rgb(17, 17, 17);
+      overflow: auto;
+      border-right: 4px solid rgb(113,191,68);
+      border-left: 4px solid rgb(113,191,68);
+}
     
-      
