@@ -289,7 +289,7 @@ footer {
     width: 300px;
     text-align: left;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 30px;
     font-weight: normal;
 }
 .FContacts{
@@ -297,10 +297,11 @@ footer {
     color: rgb(223, 223, 223);
     height: 20px;
     font-weight: normal;
-    margin-top: 40px;
+    margin-top: 30px;
   
 }
 .Flogo{
+    margin-top: 60px;
     width: 300px;   
     height: 150px;
 }
