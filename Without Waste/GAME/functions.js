@@ -22,7 +22,7 @@ function set_rubish_to_initial_position(rubish) {
 
 function show_drop(rubish) {
     drop_num = rubish.attr('data-drop');
-    $('#drop1' + drop_num).show();
+    $('#drop' + drop_num).show();
     hide_drop(drop_num);
 }
 
@@ -64,4 +64,51 @@ function stop_the_game() {
 
 restart.click(function () {
     location.reload();
-});
+})
+
+function change_scene(hide, show) {
+    var searched = document.getElementById(hide);
+    if (searched.style.display === "none") {
+        searched.style.display = "block";
+    } else {
+        searched.style.display = "none";
+    }
+    searched = document.getElementById(show);
+    if (searched.style.display === "none") {
+        searched.style.display = "block";
+    } else {
+        searched.style.display = "none";
+    }
+}
+
+function choice(material) {
+    var x = document.getElementById("basket");
+    if (material === "glass") {
+        x.style.background = "url('glassB.png')";
+    }
+    if (material === "plastic") {
+        x.style.background = "url('plasticB.png')";
+    }
+    if (material === "metal") {
+        x.style.background = "url('metalB.png')";
+    }
+    if (material === "paper") {
+        x.style.background = "url('paperB.png')";
+    } 
+}
+
+function trash(material) {
+    var x = document.getElementByClass("rubish");
+    if (material === "glass") {
+        x.style.background = "url('glass_trash.png')";
+    }
+    if (material === "plastic") {
+        x.style.background = "url('plastic_trash.png')";
+    }
+    if (material === "metal") {
+        x.style.background = "url('metal_trash.png')";
+    }
+    if (material === "paper") {
+        x.style.background = "url('paper_trash.png')";
+    }
+};

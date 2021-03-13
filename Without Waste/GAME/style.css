@@ -34,7 +34,6 @@ body {
     height: 10%;
     width: 5%;
     position: absolute;
-    background: url('glass.png');
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -98,11 +97,10 @@ body {
 }
 
 #basket {
-    height: 200px;
-    width: 115px;
+    height: 260px;
+    width: 156px;
     position: absolute;
     bottom: 5px;
-    background: url('glassB.png');
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -130,3 +128,7 @@ body {
     cursor: pointer;
 }
 
+.button{
+    position: relative;
+    left: 40%;
+}

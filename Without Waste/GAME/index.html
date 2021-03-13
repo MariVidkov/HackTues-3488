@@ -7,15 +7,23 @@
 </head>
 
 <body>
-    <div id="container">
+    <div id="choice">
+        <button class="button" onclick="/*change_scene('container', 'choice'),*/ choice('glass'), trash('glass')"><image src="glassB.png"></image></button>
+        <button class="button" onclick="change_scene('container', 'choice'),choice('plastic'), trash('plastic')"><image src="plasticB.png"></image></button>
+        <br>
+        <button class="button" onclick="change_scene('container', 'choice'),choice('metal'), trash('metal')"><image src="metalB.png"></image></button>
+        <button class="button" onclick="change_scene('container', 'choice'),choice('paper'), trash('paper')"><image src="paperB.png"></image></button>
+    </div>
 
-        <div id="score_help">
-            Score:
-            <span id="score">0</span>
-            | Life:
-            <span id="life"></span>
-            | Use mouse to control!
-        </div>
+    <div id="container"  <!--style ="display:none"-->>
+
+            <div id="score_help">
+                Score:
+                <span id="score">0</span>
+                | Life:
+                <span id="life"></span>
+                | Use mouse to control!
+            </div>
 
         <div id="branch"></div>
 
@@ -24,23 +32,23 @@
     <img src="glass.png" width="20" height="20" id="rubish1" class="rubish" data-bullseye='2'>
     <img src="glass.png" width="20" height="20" id="rubish1" class="rubish" data-bullseye='3'>-->
 
-        <div id="rubish1" class="rubish" data-drop='1'></div>
-        <div id="rubish2" class="rubish" data-drop='2'></div>
-        <div id="rubish3" class="rubish" data-drop='3'></div>
+            <div id="rubish1" class="rubish" data-drop='1'></div>
+            <div id="rubish2" class="rubish" data-drop='2'></div>
+            <div id="rubish3" class="rubish" data-drop='3'></div>
         <!--<div id="rubish_floor" class="rubish"></div>-->
 
-        <div id="drop1" class="drop"></div>
-        <div id="drop2" class="drop"></div>
-        <div id="drop3" class="drop"></div>
+            <div id="drop1" class="drop"></div>
+            <div id="drop2" class="drop"></div>
+            <div id="drop3" class="drop"></div>
 
 
-        <div id="basket">
-            <span id="score_1"></span>
-        </div>
+            <div id="basket">
+                <span id="score_1"></span>
+            </div>
 
-        <div id="floor"></div>
+            <div id="floor"></div>
 
-        <button id="restart">Restart</button>
+            <button id="restart">Restart</button>
 
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
