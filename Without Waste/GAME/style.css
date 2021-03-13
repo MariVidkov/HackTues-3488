@@ -27,22 +27,10 @@ body {
     width: 43px;
     height: 70px;
     text-align: center;
-    /*;
-	top: 1%;
-    border-radius: 50%;
-	*/
     background-color: #77cfb9;
     z-index: 99;
     background-size: contain;
     background-repeat: no-repeat;
-    /*
-    height: 10%;
-    width: 5%;
-    position: absolute;
-    
-    background-repeat: no-repeat;
-    
-    z-index: 99;*/
 }
 
 #rubish1 {
@@ -57,16 +45,6 @@ body {
     left: calc(60% + 8%/2 - 2%/2);
 }
 
-/*#rubishes_floor {
-    height: 10%;
-    width: 5%;
-    position: absolute;
-    background: url('broken_bottle.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
-    z-index: 99;
-}*/
 
 .drop {
     display: none;
@@ -137,3 +115,28 @@ body {
     position: relative;
     left: 40%;
 }
+
+#head {
+    text-align: center;
+    color: #00B1D2FF;
+    background-color: #FDDB27FF;
+}
+
+#start_button {
+    color: #FDDB27FF;
+    background-color: #00B1D2FF;
+    height: 18%;
+    width: 50%;
+    font-size: 200%;
+    position: relative;
+    left: 25.2%;
+}
+
+#logo{
+    position: relative;
+    left: 18%;
+}
+
+/*#choice {
+    display: none;
+}*/
