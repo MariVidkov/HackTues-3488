@@ -4,6 +4,7 @@ var basket = $('#basket'),
     rubish1 = $('#rubish1'),
     rubish2 = $('#rubish2'),
     rubish3 = $('#rubish3'),
+    rubish_floor = $('#rubishes_floor'),
     restart = $('#restart'),
     score_span = $('#score'),
     score_1 = $('#score_1'),
@@ -24,5 +25,5 @@ var basket = $('#basket'),
     rubish_current_position = 0,
     rubish_top = 0,
     basket_top = container_height - basket_height,
-    bullseye_num = 0;
+    drop_num = 0;
 life_span.text(life);

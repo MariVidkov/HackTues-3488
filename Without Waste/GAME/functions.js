@@ -9,7 +9,7 @@ function rubish_down(rubish) {
 
 function check_rubish_hits_floor(rubish) {
     if (collision(rubish, floor)) {
-        show_bulls_eye(rubish);
+        show_drop(rubish);
         decrement_life();
         return true;
     }
@@ -20,15 +20,15 @@ function set_rubish_to_initial_position(rubish) {
     rubish.css('top', rubish_initial_position);
 }
 
-function show_bulls_eye(rubish) {
-    bullseye_num = rubish.attr('data-bullseye');
-    $('#bullseye1' + bullseye_num).show();
-    hide_bulls_eye(bullseye_num);
+function show_drop(rubish) {
+    drop_num = rubish.attr('data-drop');
+    $('#drop1' + drop_num).show();
+    hide_drop(drop_num);
 }
 
-function hide_bulls_eye(bullseye_num) {
+function hide_drop(drop_num) {
     setTimeout(function () {
-        $('#bullseye' + bullseye_num).hide();
+        $('#drop' + drop_num).hide();
     }, 800);
 }
 

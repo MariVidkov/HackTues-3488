@@ -1,4 +1,4 @@
-﻿﻿html,
+﻿﻿﻿html,
 body {
     width: 100%;
     height: 100%;
@@ -23,12 +23,21 @@ body {
 }
 
 .rubish {
-    position: absolute;
+    /*position: absolute;
     top: 1%;
     height: 5%;
     width: 2%;
-    background-color: #fff;
+    background-color: #77cfb9;
     border-radius: 50%;
+    z-index: 99;*/
+
+    height: 10%;
+    width: 5%;
+    position: absolute;
+    background: url('glass.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
     z-index: 99;
 }
 
@@ -44,28 +53,38 @@ body {
     left: calc(60% + 8%/2 - 2%/2);
 }
 
+/*#rubishes_floor {
+    height: 10%;
+    width: 5%;
+    position: absolute;
+    background: url('broken_bottle.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    z-index: 99;
+}*/
 
-.bullseye {
+.drop {
     display: none;
     position: absolute;
     bottom: 0px;
     height: 7%;
     width: 7%;
-    background: url('bullseye1.png');
+    background: url('broken_glass.png');
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 11;
 }
 
-#bullseye1 {
+#drop1 {
     left: calc(20% + 8%/2 - 7%/2);
 }
 
-#bullseye2 {
+#drop2 {
     left: calc(40% + 8%/2 - 7%/2);
 }
 
-#bullseye3 {
+#drop3 {
     left: calc(60% + 8%/2 - 7%/2);
 }
 
@@ -110,3 +129,4 @@ body {
     display: none;
     cursor: pointer;
 }
+
