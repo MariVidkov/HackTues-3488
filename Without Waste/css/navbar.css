@@ -258,6 +258,7 @@ footer {
     background:rgb(15,15,15);
     width: 100%;
     height: 400px;
+    margin-top: 65px;
 }
 .FBorderhr{
     border: 4px solid rgb(31, 31, 31) ;
