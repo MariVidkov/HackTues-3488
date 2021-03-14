@@ -44,15 +44,16 @@ width: 100%;
   border-left: 4px solid rgb(113,191,68);
 }
 
-.TextSecondHand{
+.TextSecondH{
+  background-color: rgba(201, 243, 204, 0.452);
   width: 100%;
   justify-content: center;
   align-items: center;
   padding-bottom: 10px;
   padding-top: 10px;
-  display: flex;
 }
-.TextSecondHand p{
+.TextSecondH p{
+  box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.57);
   text-align: center;
   justify-content: center;
   color: black;
