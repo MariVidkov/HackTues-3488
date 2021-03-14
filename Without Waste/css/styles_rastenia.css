@@ -13,22 +13,10 @@ Div#home.home{
     -o-background-size: cover;
     background-size: cover;
     background-repeat:no-repeat;
-    background: -webkit-linear-gradient(to right top, #d16ba5, #c777b9,
-    #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8,
-     #52cffe, #41dfff, #46eefa, #5ffbf1);
-    background: -moz-linear-gradient(to right top, #d16ba5, #c777b9,
-    #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8,
-     #52cffe, #41dfff, #46eefa, #5ffbf1);
-    background: -ms-linear-gradient(to right top, #d16ba5, #c777b9,
-    #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8,
-     #52cffe, #41dfff, #46eefa, #5ffbf1);
-    background: -o-linear-gradient(to right top, #d16ba5, #c777b9,
-    #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8,
-     #52cffe, #41dfff, #46eefa, #5ffbf1);
-    background: linear-gradient(to right top, #d16ba5, #c777b9,
-    #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8,
-     #52cffe, #41dfff, #46eefa, #5ffbf1);
-
+    background: -webkit-linear-gradient(to right top, #0f410a, #1b5e24, #257e3f, #2b9f5e, #2cc17f, #2cc17f, #2cc17f, #2cc17f, #2b9f5e, #257e3f, #1b5e24, #0f410a);
+    background: -moz-linear-gradient(to right top, #0f410a, #1b5e24, #257e3f, #2b9f5e, #2cc17f, #2cc17f, #2cc17f, #2cc17f, #2b9f5e, #257e3f, #1b5e24, #0f410a);
+    background: -ms-linear-gradient(to right top, #0f410a, #1b5e24, #257e3f, #2b9f5e, #2cc17f, #2cc17f, #2cc17f, #2cc17f, #2b9f5e, #257e3f, #1b5e24, #0f410a);
+    background: linear-gradient(to right top, #0f410a, #1b5e24, #257e3f, #2b9f5e, #2cc17f, #2cc17f, #2cc17f, #2cc17f, #2b9f5e, #257e3f, #1b5e24, #0f410a);
 }
 
 .Ccc{
@@ -39,12 +27,13 @@ Div#home.home{
     
 }
 
-.cont {
+.cont{
     position: relative;
     width: 1200px;
     height: 800px;
-    background-color: black;
+    background-color: #062344;
     margin: 0px autp;
+
 }
 
 .cont .box{
@@ -56,8 +45,6 @@ Div#home.home{
     margin: 15px;
     box-sizing: border-box;
     overflow: hidden;
-    border-radius: 10px;
-    border: 1px solid #07ffa0;
 }
 
 .cont .box .img {
@@ -138,7 +125,7 @@ Div#home.home{
 /*textove nad galeria*/
 
 .HeaderVidove{
-    background-color: #0e3668;
+    background-color: #041a33;
     font-size: 50px;
 }
 .HeaderVidove p{
@@ -163,6 +150,7 @@ Div#home.home{
 }
 
 .TextRastenia{
+    background-color: rgba(201, 243, 204, 0.452);
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -170,17 +158,13 @@ Div#home.home{
     padding-top: 10px;
 }
 .TextRastenia p{
-    background-color: rgb(202, 255, 222);
+    box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.57);
     text-align: center;
     justify-content: center;
     color: black;
     font-size: 25px;
     width: 1200px;
-    border-radius: 10px;
-    border: 5px solid white;
 }
-
-
 
 
 
@@ -220,10 +204,11 @@ Div#home.home{
 
 
 .cont .box .info {
-    background: #07ffa0;
+    background: rgb(201, 243, 204);
 }
 
 .cont .box  {
-    background: #07ffa0;
+    background: rgb(201, 243, 204);
     
 }
+
