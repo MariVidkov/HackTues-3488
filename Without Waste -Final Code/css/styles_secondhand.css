@@ -1,0 +1,92 @@
+body{
+      
+  color:white;
+  font-family: "montserrat", Helvetica Neue, Helvetica, Arial;
+  margin: 0px;
+  padding: 0;
+}
+/*  Navbar Custom Settings  */
+.home {
+  background-image: linear-gradient(to right top, #0f410a, #1b5e24, #257e3f, #2b9f5e, #2cc17f, #2cc17f, #2cc17f, #2cc17f, #2b9f5e, #257e3f, #1b5e24, #0f410a);
+height: 130vh;
+}
+
+header{
+background-color: #041a33;
+  padding-top: 100px;
+  border-bottom: 4px solid rgb(113,191,68);
+  width: 1600px;
+  border-radius: 20px;
+  margin: 0;
+  font-size: 35px;
+  font-weight:bold;
+  font-stretch: expanded;
+  text-transform: uppercase;    
+  max-width: 2000px;
+  align-items: center;
+  margin: 0 auto;
+}
+ul{
+margin: 0;
+}   
+#map{
+height: 90vh;
+width: 100%;
+}    
+
+.section-map{
+  max-width: 1900px;
+  width: 1350px;
+  margin: auto;
+  background: rgb(17, 17, 17);
+  overflow: auto;
+  border-right: 4px solid rgb(113,191,68);
+  border-left: 4px solid rgb(113,191,68);
+}
+.HeaderVidove{
+  background-color: #041a33;
+  font-size: 50px;
+}
+.HeaderVidove p{
+  color: white;
+  font-size: 30px;
+}
+.HeaderTitle p{
+  color: white;
+  background-color: #041a33;
+  padding-top: 100px;
+  border-bottom: 4px solid rgb(113,191,68);
+  border-radius: 20px;
+  width: 1600px;
+  margin: 0;
+  font-size: 35px;
+  font-weight:bold;
+  font-stretch: expanded;
+  text-transform: uppercase;    
+  max-width: 2000px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.TextSecondHand{
+  background-color: rgba(201, 243, 204, 0.452);
+  width: 1400px;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  display: flex;
+  margin: 0px auto;
+  
+}
+.TextSecondHand p{
+  box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.57);
+    text-align: center;
+    justify-content: center;
+    color: black;
+    font-size: 25px;
+    width: 1400px;
+    display: flex;
+    margin: 0px auto;
+    
+}
