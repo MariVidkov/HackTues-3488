@@ -1,0 +1,44 @@
+body{
+    background: lightcyan;
+    color:white;
+    font-family: "montserrat", Helvetica Neue, Helvetica, Arial;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/*  Navbar Custom Settings  */
+.home{
+    background-image: url("../images/Kotka.jpg");
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.MainBox{
+    padding-top: 300px;
+    width: 80%;
+    display: flex;
+    margin: 0px auto;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    background-color: #01091152;
+    border-bottom: 4px solid rgb(113,191,68);
+    border-top: 4px solid rgb(113,191,68);
+}
+.Title{
+    font-size: 70px;
+    background-color: #020e1dc4;
+}
+.Description{
+    font-size: 40px;
+    background-color: #041a3352;
+    margin-bottom: 20px;
+}
+
+.Description2{
+    font-size: 20px;
+}
