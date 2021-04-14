@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Карта на контейнерите на дрехи - Without Waste</title>
+    <link rel='stylesheet' type='text/css' href='css\navbar.css'>    
+    <link rel='stylesheet' type='text/css' href="css\styles_konteineridrehi.css">
+    <link rel="icon" href="images/logo-icon.png" type="image/x-icon">    
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+</head>
+<body>
+<div class="container">
+    <div id = "home" class="home">
+        <nav class="navbar" id="navbar">
+            <ul id="mainUl" class="mainUl">
+                <li><a class="a" href="reciklirane.html">Рециклиранe</a> </li> 
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn" id="dropbtn">
+                        Застрашени видове
+                    </button>
+                    <div class="content_dropdown">
+                        <a class="a a-down" href="jivotni.html">Животни</a>
+                        <a class="a a-down" href="rastenia.html">Растения</a>                        
+                    </div>
+                </div>
+                </li> 
+                <li><a class="a" href="igra.html">Игра </a></li>
+                <li class="logo"><a class="a" href="index.html">WithoutWaste's Logo</a></li>      
+                <li>
+                    <div class="dropdown active_nav">
+                        <button class="dropbtn" id="dropbtn">
+                                Карти
+                        </button>
+                        <div class="content_dropdown"> 
+                            <a class="a a-down" href="karta_konteineri.html">Kонтейнери <br> за <br>  отпадъци</a>
+                            <a class="a a-down active_nav" href="karta_konteineridrehi.html">Kонтейнери<br> за<br>  дрехи</a>                           
+                        </div>
+                    </div>
+               
+                    <li><a class="a" href="secondhand.html">Second hand</a></li>                        
+                <li><a class="a" href="store.html">Магазин</a></li> 
+
+            </ul> 
+            <div class="Mobile">
+                <li class="logo"><a class="a" href="index.html">WithoutWaste's Logo</a></li>      
+                <div class="burger" id="burger">
+                    <div class="line1" id="line1"></div>
+                    <div class="line2" id="line2"></div>
+                    <div class="line3" id="line3"></div>                    
+                </div>  
+            </div>  
+            
+        </nav>
+        <div class="ResponsiveBackground" id="ResponsiveBackground"></div>
+        <div class="MainContainer">
+            <div class="HeaderTitle"> <p>
+            Карта на контейнерите за рециклиране на дрехи</p>
+        </div> 
+        <div class="Background-section">
+        <div class="section-map">
+            <div id="map"></div>
+        </div>
+    </div>
+    </div>
+      </div>
+
+    <div class="Contacts-title">
+    </div>   
+
+    
+    <footer class="footer" id="footer">
+        <div class="FSection">
+            <div class="FScontent">
+                <img class="Flogo" src = "/images/logo-icon.png">
+            </div>
+        </div> 
+        <div class="FSection">
+            <h1 class="Ftitle">За нас</h1>
+            <h1 class="FDescription">Without Waste е мултифункционална платформа, която ще ви даде необходимата информация и насоки, за да помогнете в опазването на околната среда.     </h1>
+        </div>
+        <div class="FSection">
+            <h1 class="FName">WithoutWaste</h1>
+            <h1 class="FContacts">Контакти:</h1>
+            <h2 class="Fgmail">withoutwasteww@gmail.com</h2>
+            <ul class="FIcons">
+                <li><a id="instagramLink" href="https://www.instagram.com/without_waste_ww/" target="_blank"><img class="InImage" src = "images\Icons/3.png"></a></li>            
+                <li><a id="youtubeLink" href="https://www.youtube.com/channel/UCu2BrSg5ibbZ8ZWWEA4dWlg" target="_blank"><img class="YTImage" src="images\Icons/1.png"></a></li>          
+            </ul>  
+        </div>
+    </div>
+    </footer>
+</div>
+</body>
+<script src="js\script.js"></script>
+<script src="js\Scroll.js"></script>
+<script src = "js\hamburger.js"></script>
+<script src="js\map2.js"></script>
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDs84wb02ib4MG6M8ZAU7vWIaEzcqTzHAQ&callback=initMap&libraries=&v=weekly"
+async
+></script>
+</html>                                                                                             
