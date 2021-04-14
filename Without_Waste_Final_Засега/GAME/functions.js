@@ -19,9 +19,8 @@ function set_rubish_to_initial_position(rubish) {
 }
 
 function show_drop(rubish) {
-    drop_num = rubish.attr('dataDrop');
+    $('#drop' + drop_num).css('left', "calc("+dataDrop*10+"% + 8%/2 - 2%/2)");
     $('#drop' + drop_num).css('background', 'url("broken_' + current_material + '.png")').show();
-    hide_drop(drop_num);
 }
 
 function hide_drop(drop_num) {
@@ -41,7 +40,6 @@ function check_rubish_hits_basket(rubish) {
 }
 
 function stop_the_game() {
-    //cancelAnimationFrame(anim_id);
     restart.slideDown();
 }
 

@@ -46,15 +46,39 @@ body {
     }
 
 #drop1 {
-    left: calc(20% + 8%/2 - 7%/2);
+    left: calc(10% + 8%/2 - 7%/2);
 }
 
 #drop2 {
-    left: calc(40% + 8%/2 - 7%/2);
+    left: calc(20% + 8%/2 - 7%/2);
 }
 
 #drop3 {
+    left: calc(30% + 8%/2 - 7%/2);
+}
+
+#drop4 {
+    left: calc(40% + 8%/2 - 7%/2);
+}
+
+#drop5 {
+    left: calc(50% + 8%/2 - 7%/2);
+}
+
+#drop6 {
     left: calc(60% + 8%/2 - 7%/2);
+}
+
+#drop7 {
+    left: calc(70% + 8%/2 - 7%/2);
+}
+
+#drop8 {
+    left: calc(80% + 8%/2 - 7%/2);
+}
+
+#drop9 {
+    left: calc(90% + 8%/2 - 7%/2);
 }
 
 #floor {
