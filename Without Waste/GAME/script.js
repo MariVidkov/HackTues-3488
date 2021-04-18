@@ -6,10 +6,29 @@ let speed = 4;
 let frame = 0;
 let rubishesAll  = [];
 
+function getRandomMat() {
+
+    const newRubishMatNum = Math.floor(Math.random() * 4 + 1);
+
+    switch(newRubishMatNum) {
+        case 1: 
+            return 'glass';
+        case 2: 
+            return 'plastic';
+        case 3: 
+            return 'metal';
+        case 4: 
+            return 'paper';
+        default:
+            return 'metal';           
+    }
+}
+
 async function gameRender(matMain) {
     frame++;
     if(frame >=  30) {
         frame = 0;
+        speed = speed + 0.2;
         const newRubish = document.createElement('div');
         const uDataDrop = Math.floor(Math.random() * 10 + 1);
         const uid = Date.now();
@@ -19,27 +38,14 @@ async function gameRender(matMain) {
         newRubish.style.left = "calc("+uDataDrop*10+"% + 8%/2 - 2%/2)";
         newRubish.mat = matMain;    
      
-        switch(matMain) {
-            case "glass": 
-                newRubish.style.background = "url('glass_trash.png')";
-                break;
-            case "plastic": 
-                newRubish.style.background = "url('plastic_trash.png')";
-                break;
-            case "metal": 
-                newRubish.style.background = "url('metal_trash.png')";
-                break;
-            case "paper": 
-                newRubish.style.background = "url('paper_trash.png')";
-                break;                                 
-        }
-        
-    
+        const newRubishMat = getRandomMat();
+        newRubish.style.background = "url("+newRubishMat+"_trash.png)";        
         document.body.appendChild(newRubish);
-    
         const containerMain = document.getElementById("container")
-    
         containerMain.appendChild(newRubish);
+
+        $("#"+newRubish.id).attr("mat", newRubishMat);
+
         rubishesAll.push($("#"+newRubish.id));
     }   
 
@@ -54,13 +60,27 @@ async function gameRender(matMain) {
     for(let rubishKey in rubishesAll) {
         if(check_rubish_hits_floor(rubishesAll[rubishKey])){
             rubishesAll[rubishKey].remove();
-            life--;
+            if(rubishesAll[rubishKey].attr("mat") == matMain) {
+                life--;
+            }
         }
         else if(check_rubish_hits_basket(rubishesAll[rubishKey])) {
             rubishesAll[rubishKey].remove();
-            score++;
+            if(rubishesAll[rubishKey].attr("mat") === matMain) {
+                score++;
+            }
+            else {
+                score--;
+                life--;
+            }
             score_span.textContent = score;
         }
+
+        if(score < 0) {
+            score = 0;
+            score_span.textContent = score;
+        }
+
         else {
             rubish_down(rubishesAll[rubishKey], speed);
         }
@@ -70,5 +90,5 @@ async function gameRender(matMain) {
         speed = score / 2 + 4;
     }
 
-    setTimeout(gameRender.bind(null, matMain), 1000 / 30);
+    setTimeout(gameRender.bind(null, matMain), 1000 / 60);
 }
