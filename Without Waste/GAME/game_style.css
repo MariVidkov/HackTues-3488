@@ -1,0 +1,244 @@
+﻿﻿.home{
+    background: rgb(0,0,0);
+    background: linear-gradient(34deg, rgba(0,0,0,1) 0%, rgba(37,37,37,1) 63%, rgba(15,15,15,1) 100%);
+    font-family: "montserrat", Helvetica Neue, Helvetica, Arial;
+    margin: 0;
+    padding: 0;
+}
+
+.HeaderTitle{
+    color: white;
+    padding-top: 80px;
+    font-size: 35px;
+    font-weight:bold;
+    font-stretch: expanded;
+    text-transform: uppercase;    
+    align-items: center;
+    margin: 0 auto;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+.HeaderTitle{
+    text-align: center;
+    width: 80%;
+    border-bottom: 4px solid rgb(94, 218, 23);
+    border-radius: 10px;
+    margin: 0 auto;    
+}
+#container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-top: 0.1px solid rgb(17, 17, 17);
+    background-image: url("../GAME/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.score_help {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+
+}
+.score_help p{
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    display: flex;
+    margin: 0;
+}
+.score_help span{
+    color: white;   
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    display: flex;
+}
+.rubish {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    background-color: #77cfb9;
+    z-index: 99;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.drop {
+    display: none;
+    position: absolute;
+    bottom: 0px;
+    height: 7%; 
+    width: 7%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 11;
+    }
+
+#drop1 {
+    left: calc(20% + 8%/2 - 7%/2);
+}
+
+#drop2 {
+    left: calc(40% + 8%/2 - 7%/2);
+}
+
+#drop3 {
+    left: calc(60% + 8%/2 - 7%/2);
+}
+
+#floor {
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    background-color: #222222;
+    bottom: 0;
+    z-index: 10;
+}
+
+.basket {
+    height: 290px;
+    width: 250px;
+    position: absolute;
+    bottom: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    z-index: 11;
+}
+.basket{
+    background-size: inherit;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#score_1 {
+    position: absolute;
+    color: #424242;
+    font-size: 30px;
+    top: 45%;
+    left: 30%;
+}
+
+#restart {
+    border: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    background-color: firebrick;
+    top: 40%;
+    font-size: 35px;
+    display: none;
+    cursor: pointer;
+}
+#restart p{
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    transition: 0.5s;
+}
+
+#restart p:hover{
+    color:rgb(113,191,68);
+}
+
+.button {
+display: inline-block;
+width: 470px;
+}
+
+.head {
+    text-align: center;
+    color: #00B1D2FF;
+    background-color: #FDDB27FF;
+}
+
+#start_button {
+    cursor: pointer;
+    background-color: rgb(26, 26, 26);
+    transition: 0.5s;
+    height: 100px;
+}
+#start_button p{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    width: 100%;
+    text-align: center;
+    transition: 0.5s;
+}
+
+#start_button:hover{
+
+    background-color: rgb(15, 15, 15);
+}
+#start_button p:hover{
+    color: rgb(113,191,68);
+}
+
+.Start_Game{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+}
+
+.start_button{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+.logo-game{
+    display: flex;
+}
+
+.logo-game img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 30px;
+}
+.logo-image{
+    width: 100%;
+}
+
+#start {
+    width: 100%;
+}
+
+#choice {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.start_bb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+}

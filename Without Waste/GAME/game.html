@@ -1,0 +1,78 @@
+﻿﻿<html>
+
+<head>
+    <title>Game</title>
+    <link href="game_style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id = "start">
+        <p class="HeaderTitle" id="head">Ecotopia</p>
+        <div class="Start_Game">
+        <div class="logo-game"> <image id="logo-image" rel="Ecotopia" src="logo_game.png"></image> </div>
+        <button class="start_button" id="start_button" onclick="change_scene('choice', 'start')"><p>START</P></START></button>
+        </div>
+        </div>
+    </div>
+    <div id="choice" style="display: none">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="start_bb">
+        <button class="button" onclick="chooseAndStartGame('glass')"><image src="glassB.png"></image></button>
+        <button class="button" onclick="chooseAndStartGame('plastic')"><image src="plasticB.png"></image></button>
+        <button class="button" onclick="chooseAndStartGame('metal')"><image src="metalB.png"></image></button>
+        <button class="button" onclick="chooseAndStartGame('paper')"><image src="paperB.png"></image></button>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p></p>
+    </div>
+
+    <div id="container">
+
+            <div class="score_help"  id="score_help">
+                <p> Score: </p>   
+                <span id="score">0 </span>
+                <p> | Life:</p>
+                <span id="life">0 </span>
+                <p> | Use mouse to control </p>
+            </div>
+
+        <div id="branch"></div>
+
+            <div id="drop1" class="drop"></div>
+            <div id="drop2" class="drop"></div>
+            <div id="drop3" class="drop"></div>
+            <div id="drop4" class="drop"></div>
+            <div id="drop5" class="drop"></div>
+            <div id="drop6" class="drop"></div>
+            <div id="drop7" class="drop"></div>
+            <div id="drop8" class="drop"></div>
+            <div id="drop9" class="drop"></div>
+            <div id="drop9" class="drop"></div>
+
+
+            <div class="basket" id="basket">
+                <span id="score_1"></span>
+            </div>
+
+            <div id="floor"></div>
+
+            <button id="restart"><p>Restart</p></button>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="collision_detection.js"></script>
+    <script src="variables.js"></script>
+    <script src="functions.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
